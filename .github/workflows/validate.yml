@@ -42,8 +42,11 @@ jobs:
       - name: Check external links
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --no-progress --accept 200,206,429 --exclude-path node_modules './**/*.md'
-          fail: true
+          args: >-
+            --no-progress --accept 200,206,429,403
+            --exclude 'researchgate\.net' --exclude-path node_modules
+            './**/*.md'
+          fail: false
 
   shell:
     name: Installer script

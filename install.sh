@@ -28,7 +28,7 @@ git clone --depth 1 --quiet "$REPO" "$TMP/repo"
 mkdir -p "$DEST"
 if [ -d "$DEST/$SKILL" ]; then
   echo "→ replacing existing install at $DEST/$SKILL"
-  rm -rf "$DEST/$SKILL"
+  rm -rf "${DEST:?}/${SKILL:?}"
 fi
 cp -R "$TMP/repo/skills/$SKILL" "$DEST/$SKILL"
 

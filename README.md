@@ -76,7 +76,7 @@ There is nothing to invoke. The skill triggers on its own when you say things li
 
 To force it in Claude Code:
 
-```
+```text
 /anti-slop-design
 ```
 
@@ -90,7 +90,7 @@ With it: Claude names a visual thesis first, derives a type/space/color system, 
 
 ## Repo structure
 
-```
+```text
 anti-slop-design/
 ├── skills/
 │   └── anti-slop-design/

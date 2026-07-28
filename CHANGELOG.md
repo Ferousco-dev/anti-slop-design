@@ -6,6 +6,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); version
 ## [1.0.0] — 2026-07-29
 
 ### Added
+
 - Initial skill: `anti-slop-design`
 - `SKILL.md` entry point — one rule, six-step operating protocol, instant-reject list, non-negotiables
 - `references/01-philosophy.md` — core philosophy module, covering:
