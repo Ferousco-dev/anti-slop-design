@@ -53,6 +53,8 @@ Load these on demand — do not read them all upfront.
 | [`references/03-color-patterns.md`](references/03-color-patterns.md) | Choosing a palette, defining tokens, building ramps, dark mode, contrast |
 | [`references/04-typography-patterns.md`](references/04-typography-patterns.md) | Choosing typefaces, setting a type scale, writing any user-facing copy |
 | [`references/05-layout-patterns.md`](references/05-layout-patterns.md) | Page structure, hero design, grids, information architecture |
+| [`references/06-component-patterns.md`](references/06-component-patterns.md) | Cards, pricing, forms, social proof, loading, empty and error states |
+| [`references/07-animation-patterns.md`](references/07-animation-patterns.md) | Any transition, entrance, hover, scroll behavior, or page transition |
 
 Each taxonomy module ends with a **Quick audit** block — a list of strings to grep your own output for. Run it before emitting.
 

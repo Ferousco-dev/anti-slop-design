@@ -3,6 +3,18 @@
 All notable changes to this skill are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning follows [SemVer](https://semver.org/).
 
+## [1.2.0] — 2026-07-29
+
+### Added
+
+- `references/06-component-patterns.md` — the SaaS triad and cookie-cutter cards; pricing dark patterns ("Most Popular" ribbons, decoy tiers, hidden overage terms); avatar stacks and fake social proof; cookie banners where reject must be as easy as accept; carousels backed by Nielsen Norman research (~1% engage the first slide, well under 0.5% reach the second); toggles, skeletons, spinners, toasts, tooltips, badges, progress and step indicators; empty states as the highest-leverage onboarding moment; error states as a trust-critical touchpoint.
+- `references/07-animation-patterns.md` — opens with a mandatory accessibility floor covering `prefers-reduced-motion`, WCAG 2.3.3, and vestibular impact, with a reduced-motion reset that preserves `animationend`/`transitionend` events. Then fade-in-everything, `transition: all` and compositing, perceptual timing thresholds, parallax, meaningless hover, scroll-triggered cascades, static deadness as the opposite failure, easing tokens, loading theatre, infinite loops, springs, 3D, splash screens, custom cursors, scroll-hijacking libraries, video backgrounds, typewriter effects, confetti, SVG morphing, and page transitions.
+
+### Changed
+
+- Deduplicated two patterns that appeared twice in the source material: the tilted dashboard mockup (§2.1.12 / §6.9) and the left-border accent card (§2.1.13 / §6.10) now cross-reference module 02 instead of repeating it.
+- `SKILL.md` and README route to all seven modules.
+
 ## [1.1.0] — 2026-07-29
 
 ### Added
@@ -37,5 +49,6 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); version
 - CI: frontmatter validation, size budgets, link checking, markdown lint
 - CD: automatic tagged release and `.zip` bundle on version bump
 
+[1.2.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v1.2.0
 [1.1.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v1.1.0
 [1.0.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v1.0.0

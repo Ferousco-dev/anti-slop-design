@@ -100,7 +100,9 @@ anti-slop-design/
 │           ├── 02-visual-patterns.md
 │           ├── 03-color-patterns.md
 │           ├── 04-typography-patterns.md
-│           └── 05-layout-patterns.md
+│           ├── 05-layout-patterns.md
+│           ├── 06-component-patterns.md
+│           └── 07-animation-patterns.md
 ├── scripts/validate_skill.py     # CI validator
 ├── .github/workflows/            # validate + release automation
 └── install.sh
@@ -117,8 +119,8 @@ The skill uses **progressive disclosure**: `SKILL.md` stays small so it costs al
 | 03 | Color Patterns | The purple monoculture, OKLCH ramps, 60-30-10, neutrals, dark mode, contrast | ✅ Stable |
 | 04 | Typography, Voice & Copy | Inter, pairings, alignment, the buzzword database, headlines, cadence uniformity | ✅ Stable |
 | 05 | Layout Patterns | The SaaS conveyor belt, hero alternatives, bento, spacing rhythm, scroll hijacking | ✅ Stable |
-| 06 | Component & Element Patterns | — | 🚧 Planned |
-| 07 | Animation & Motion Patterns | — | 🚧 Planned |
+| 06 | Component & Element Patterns | The SaaS triad, pricing dark patterns, carousels, loading, empty and error states | ✅ Stable |
+| 07 | Animation & Motion Patterns | Fade-in-everything, `transition: all`, timing thresholds, parallax, scroll hijacking, reduced motion | ✅ Stable |
 | 08 | Code-Level & Technical Patterns | — | 🚧 Planned |
 | 09 | Image & Media Patterns | — | 🚧 Planned |
 | 10 | The Craft List | — | 🚧 Planned |
