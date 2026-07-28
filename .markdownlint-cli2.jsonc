@@ -4,6 +4,10 @@
     "MD013": false,
     "MD033": false,
     "MD041": false,
+    // Severity markers ("**CRITICAL**") sit on their own line by design.
+    "MD036": false,
+    // Reference tables are hand-aligned for readability in raw markdown.
+    "MD060": false,
     "MD024": { "siblings_only": true }
   },
   "ignores": ["node_modules/**"]

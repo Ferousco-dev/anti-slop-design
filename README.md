@@ -95,8 +95,12 @@ anti-slop-design/
 ├── skills/
 │   └── anti-slop-design/
 │       ├── SKILL.md              # entry point — loaded on trigger
-│       └── references/
-│           └── 01-philosophy.md  # loaded on demand
+│       └── references/          # loaded on demand
+│           ├── 01-philosophy.md
+│           ├── 02-visual-patterns.md
+│           ├── 03-color-patterns.md
+│           ├── 04-typography-patterns.md
+│           └── 05-layout-patterns.md
 ├── scripts/validate_skill.py     # CI validator
 ├── .github/workflows/            # validate + release automation
 └── install.sh
@@ -106,14 +110,20 @@ The skill uses **progressive disclosure**: `SKILL.md` stays small so it costs al
 
 ## Modules
 
-| # | Module | Status |
-|---|---|---|
-| 01 | Core Philosophy | ✅ Stable |
-| 02 | The Slop Taxonomy — banned pattern database | 🚧 In progress |
-| 03 | The Craft List — what premium design requires | 🚧 Planned |
-| 04 | Section-by-Section Rules | 🚧 Planned |
-| 05 | Pre-Emit Self-Critique Checklist | 🚧 Planned |
-| 06 | Workflow & Execution Protocol | 🚧 Planned |
+| # | Module | Covers | Status |
+|---|---|---|---|
+| 01 | Core Philosophy | Why slop happens, the three laws, cost analysis, self-interrogation | ✅ Stable |
+| 02 | Visual Patterns | 20 banned treatments: gradients, glassmorphism, blobs, glows, radius, shadows, badges | ✅ Stable |
+| 03 | Color Patterns | The purple monoculture, OKLCH ramps, 60-30-10, neutrals, dark mode, contrast | ✅ Stable |
+| 04 | Typography, Voice & Copy | Inter, pairings, alignment, the buzzword database, headlines, cadence uniformity | ✅ Stable |
+| 05 | Layout Patterns | The SaaS conveyor belt, hero alternatives, bento, spacing rhythm, scroll hijacking | ✅ Stable |
+| 06 | Component & Element Patterns | — | 🚧 Planned |
+| 07 | Animation & Motion Patterns | — | 🚧 Planned |
+| 08 | Code-Level & Technical Patterns | — | 🚧 Planned |
+| 09 | Image & Media Patterns | — | 🚧 Planned |
+| 10 | The Craft List | — | 🚧 Planned |
+| 11 | Section-by-Section Rules | — | 🚧 Planned |
+| 12 | Pre-Emit Self-Critique Checklist | — | 🚧 Planned |
 
 ## Contributing
 

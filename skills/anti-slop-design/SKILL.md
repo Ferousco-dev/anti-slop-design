@@ -49,8 +49,16 @@ Load these on demand — do not read them all upfront.
 | File | Read it when |
 |---|---|
 | [`references/01-philosophy.md`](references/01-philosophy.md) | Starting any design task; justifying a decision; explaining why something is slop |
+| [`references/02-visual-patterns.md`](references/02-visual-patterns.md) | Backgrounds, surfaces, shadows, borders, badges, decorative elements |
+| [`references/03-color-patterns.md`](references/03-color-patterns.md) | Choosing a palette, defining tokens, building ramps, dark mode, contrast |
+| [`references/04-typography-patterns.md`](references/04-typography-patterns.md) | Choosing typefaces, setting a type scale, writing any user-facing copy |
+| [`references/05-layout-patterns.md`](references/05-layout-patterns.md) | Page structure, hero design, grids, information architecture |
 
-> Additional reference modules (slop taxonomy, craft list, section-by-section rules, pre-emit checklist) are being added incrementally. See the repo CHANGELOG.
+Each taxonomy module ends with a **Quick audit** block — a list of strings to grep your own output for. Run it before emitting.
+
+Severity: **CRITICAL** = automatic fail, regenerate · **HIGH** = regenerate unless defensible in one specific sentence · **MEDIUM** = justify or replace · **LOW** = question the default.
+
+> Further modules (craft list, section-by-section rules, pre-emit checklist) are being added incrementally. See the repo CHANGELOG.
 
 ## Non-negotiables
 
