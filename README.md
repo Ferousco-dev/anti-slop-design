@@ -95,15 +95,13 @@ anti-slop-design/
 ├── skills/
 │   └── anti-slop-design/
 │       ├── SKILL.md              # entry point — loaded on trigger
-│       └── references/          # loaded on demand
-│           ├── 01-philosophy.md
-│           ├── 02-visual-patterns.md
-│           ├── 03-color-patterns.md
-│           ├── 04-typography-patterns.md
-│           ├── 05-layout-patterns.md
-│           ├── 06-component-patterns.md
-│           ├── 07-animation-patterns.md
-│           └── 08-copywriting-patterns.md
+│       ├── references/           # loaded on demand
+│       │   ├── 01-philosophy.md
+│       │   ├── 02-visual-patterns.md … 12-section-rules.md
+│       │   ├── 13-pre-emit-checklist.md
+│       │   └── 14-workflow.md
+│       └── assets/
+│           └── project-context.template.md
 ├── scripts/validate_skill.py     # CI validator
 ├── .github/workflows/            # validate + release automation
 └── install.sh
@@ -123,11 +121,14 @@ The skill uses **progressive disclosure**: `SKILL.md` stays small so it costs al
 | 06 | Component & Element Patterns | The SaaS triad, pricing dark patterns, carousels, loading, empty and error states | ✅ Stable |
 | 07 | Animation & Motion Patterns | Fade-in-everything, `transition: all`, timing thresholds, parallax, reduced motion | ✅ Stable |
 | 08 | Copywriting & Content | Buzzwords, headlines, voice, cadence uniformity, testimonials, case studies, corporate speak | ✅ Stable |
-| 09 | Code-Level & Technical Patterns | — | 🚧 Planned |
-| 10 | Image & Media Patterns | — | 🚧 Planned |
-| 11 | The Craft List | — | 🚧 Planned |
-| 12 | Section-by-Section Rules | — | 🚧 Planned |
-| 13 | Pre-Emit Self-Critique Checklist | — | 🚧 Planned |
+| 09 | Code-Level & Technical Patterns | Div soup, ARIA misuse, focus management, tokens, Core Web Vitals, forms | ✅ Stable |
+| 10 | Image & Media Patterns | Stock photos, AI imagery, generic illustration, icons, screenshots, alt text | ✅ Stable |
+| 11 | The Craft List | The eight states, optical alignment, real content, keyboard, performance budgets | ✅ Stable |
+| 12 | Section-by-Section Rules | Nav, hero, proof, features, pricing, FAQ, CTA, footer, forms, dashboards, 404 | ✅ Stable |
+| 13 | Pre-Emit Self-Critique Checklist | Six gates from instant-fails to the final four questions | ✅ Stable |
+| 14 | Workflow & Execution Protocol | Full protocol, module routing, review / existing-product / constrained-scope modes | ✅ Stable |
+
+Plus [`assets/project-context.template.md`](skills/anti-slop-design/assets/project-context.template.md) — copy it to `references/00-project-context.md` to pin your own product's brief, palette, and voice so they stop being re-decided every session.
 
 ## A note on the examples
 

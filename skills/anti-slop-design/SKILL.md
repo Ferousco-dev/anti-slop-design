@@ -22,7 +22,7 @@ Run this loop on every UI task. Do not skip steps — skipping is how slop retur
 2. **Commit to a direction.** Pick one visual thesis and name it (e.g. "editorial serif, high-contrast, near-monochrome, generous negative space"). A named direction is what prevents regression to the mean.
 3. **Derive the system, not the screen.** Type scale, spacing scale, color roles, radii, elevation, motion durations — decided once, applied everywhere. Ad-hoc per-component values are a slop tell.
 4. **Build.** Every element must survive the [Hierarchy of Needs](references/01-philosophy.md#the-anti-slop-hierarchy-of-needs).
-5. **Self-critique before emitting.** Re-read your own output hunting for banned patterns. Fix what you find. Do not ship and apologize.
+5. **Self-critique before emitting.** Run [`references/13-pre-emit-checklist.md`](references/13-pre-emit-checklist.md). Fix what you find. Do not ship and apologize.
 6. **State your choices.** Close with 3–6 lines naming the deliberate decisions and why. If you cannot justify a choice, it was slop — go back to step 4.
 
 ## Instant rejects
@@ -56,6 +56,14 @@ Load these on demand — do not read them all upfront.
 | [`references/06-component-patterns.md`](references/06-component-patterns.md) | Cards, pricing, forms, social proof, loading, empty and error states |
 | [`references/07-animation-patterns.md`](references/07-animation-patterns.md) | Any transition, entrance, hover, scroll behavior, or page transition |
 | [`references/08-copywriting-patterns.md`](references/08-copywriting-patterns.md) | Any user-facing words: headlines, body, CTAs, testimonials, errors, release notes |
+| [`references/09-code-patterns.md`](references/09-code-patterns.md) | Markup, tokens, styling architecture, performance, accessibility wiring |
+| [`references/10-image-media-patterns.md`](references/10-image-media-patterns.md) | Photography, illustration, icons, screenshots, video, alt text |
+| [`references/11-craft-list.md`](references/11-craft-list.md) | Knowing what to **add** once the slop is gone |
+| [`references/12-section-rules.md`](references/12-section-rules.md) | Concrete rules for a specific page region — nav, hero, pricing, footer, forms |
+| [`references/13-pre-emit-checklist.md`](references/13-pre-emit-checklist.md) | **Always, before emitting.** The gate. |
+| [`references/14-workflow.md`](references/14-workflow.md) | Full protocol, module routing, and the review / existing-product / constrained-scope modes |
+
+To pin your own product's brief, palette, and voice so they stop being re-decided every session, copy [`assets/project-context.template.md`](assets/project-context.template.md) to `references/00-project-context.md`, fill it in, and add it to this table as "read first, always."
 
 **On the examples.** This skill was written while building **AppMD**, a mobile app analysis tool, so APK/permission/security examples appear throughout. They are illustrations of the *principle*, never requirements. Substitute the user's actual product and domain — an example that mentions APKs applies identically to invoices, patient records, or freight manifests.
 

@@ -42,6 +42,24 @@ python3 scripts/validate_skill.py
 
 New modules go in `references/NN-name.md`, get a row in the `SKILL.md` references table, and a row in the README module list. Bump the version in `CHANGELOG.md`.
 
+## Maintenance protocol
+
+Slop is a moving target. A pattern that reads as fresh today becomes a default in eighteen months, and today's counter-trend becomes tomorrow's cliché — that already happened to bento grids, and it is happening to the brutalist/monospace backlash against them.
+
+**Quarterly review.** For each module, ask:
+
+1. **Has any banned pattern become genuinely rare?** Demote it — a ban nobody violates is dead weight in the context window.
+2. **Has any recommended alternative become the new default?** Promote it to a ban. This is the most common way the skill goes stale.
+3. **Are the numbers still true?** Core Web Vitals thresholds, browser support, adoption statistics, and research findings all drift. Re-verify anything cited with a figure.
+4. **Are the links alive?** CI reports this, non-blocking.
+5. **Is anything now duplicated across modules?** Merge and cross-reference.
+
+**When a bundled tool changes its defaults** — a new Tailwind palette, a new shadcn theme, a new framework starter — that is a training-data attractor forming. Add it to the inherited-defaults table in module 01 before it saturates.
+
+**Version rules.** New pattern or module → minor. Moving content between modules, renumbering, or changing the entry-point contract → major, because downstream forks and pinned installs break. Corrections and link fixes → patch.
+
+**Keep the entry point small.** Every addition to `SKILL.md` costs tokens on every single activation. Detail belongs in `references/`. CI enforces the budget, but the budget is a ceiling, not a target.
+
 ## Releases
 
 Merging to `main` with a `CHANGELOG.md` version bump triggers a tagged release and a `.zip` bundle. You do not need to tag manually.

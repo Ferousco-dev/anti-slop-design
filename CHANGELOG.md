@@ -3,6 +3,24 @@
 All notable changes to this skill are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning follows [SemVer](https://semver.org/).
 
+## [3.0.0] — 2026-07-29
+
+The skill is now complete. All planned modules are stable.
+
+### Added
+
+- `references/09-code-patterns.md` — div soup and why models produce it (no representation of the accessibility tree); ARIA as a substitute for semantics; focus management and `:focus-visible`; `!important`, magic numbers and z-index scales; arbitrary values versus tokens; image performance against the 2026 Core Web Vitals thresholds (LCP <2.5s, INP <200ms, CLS <0.1; images are the LCP element on ~73% of mobile pages); the eight interaction states; form semantics; i18n readiness; error and loading handling; and a five-step accessibility gate.
+- `references/10-image-media-patterns.md` — generic stock photography; AI-generated imagery with the hard line against synthetic humans presented as real, and the consumer-trust data behind it; generic vector illustration; icons that carry no information; screenshot craft; video and captions; images of text; overlay contrast; cross-asset consistency; and a full alt-text decision tree.
+- `references/11-craft-list.md` — the positive specification: eight states, optical over mathematical alignment, spacing as grouping, real content at the extremes, keyboard as a first-class path, responsive type and space, dark mode as a designed system, micro-copy, performance budgets, motion with a point of view, the details that signal a human, and documented systems.
+- `references/12-section-rules.md` — ban / do / done-when for nav, hero, social proof, features, pricing, testimonials, FAQ, CTA, footer, forms, dashboards, empty-loading-error, documentation, and 404.
+- `references/13-pre-emit-checklist.md` — six gates: instant fails, intention, copy, accessibility, craft, and four final questions. Plus a reporting format and a one-minute version.
+- `references/14-workflow.md` — the expanded protocol, a module routing table, and four modes the short version does not cover: reviewing existing work, working inside an existing product, handling a user who explicitly requests a banned pattern, and constrained scope.
+- `assets/project-context.template.md` — a template users copy to `references/00-project-context.md` to pin their own brief, design system, voice, defensible claims, standing decisions, and known debt. Kept separate so upstream updates never conflict with local context.
+
+### Changed
+
+- `SKILL.md` step 5 now routes explicitly to the pre-emit checklist rather than describing self-critique generically.
+
 ## [2.0.0] — 2026-07-29
 
 ### Added
@@ -66,6 +84,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); version
 - CI: frontmatter validation, size budgets, link checking, markdown lint
 - CD: automatic tagged release and `.zip` bundle on version bump
 
+[3.0.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v3.0.0
 [2.0.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v2.0.0
 [1.2.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v1.2.0
 [1.1.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v1.1.0
