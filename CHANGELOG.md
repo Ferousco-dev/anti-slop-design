@@ -3,6 +3,23 @@
 All notable changes to this skill are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning follows [SemVer](https://semver.org/).
 
+## [2.0.0] — 2026-07-29
+
+### Added
+
+- `references/08-copywriting-patterns.md` — the copywriting module. Temporal filler openings; the "it's not just X, it's Y" formula; lists of three; cadence uniformity as the primary diagnostic; voice without sacrificing correctness; vague claims and their legal exposure; "Imagine if", "We believe", "We are", "Our Mission"; the FAQ crutch; generic CTAs; placeholder copy; fake testimonials and case studies; SEO filler; press-release tone; a curated corporate-speak list; and a 14-point generated-tone checklist with a rewrite procedure.
+- A note in `SKILL.md` and the README explaining that APK, permission, and mobile-security examples throughout the modules come from AppMD, the project the skill was authored for, and are illustrations rather than requirements.
+
+### Changed
+
+- **BREAKING (organizational):** module 04 is now **Typography only**. All word-level guidance moved to module 08. Module 04 previously held both, duplicating §2.7 of the source material.
+- Module 04 gained real typographic depth in place of the moved copy sections: type-scale construction with a worked ratio scale, line height and tracking that scale inversely with size, measure, tabular numerals, fallback metric matching to prevent layout shift, and an accessibility floor (16px body minimum, no light weights for body, no text baked into images, heading levels chosen semantically).
+- Em-dash guidance moved to §8.21, keeping the discipline and the correction that it is not a detector.
+
+### Removed
+
+- The source material's ~820-term corporate-speak list, which degenerated into generated filler ("randomness by design", "buttressing by design") and swept in legitimate technical vocabulary (Kubernetes, Docker, TLS, encryption at rest, caching, logging). Replaced with a curated list of genuine corporate speak plus a general test, and an explicit note that precise technical terms are the opposite of jargon.
+
 ## [1.2.0] — 2026-07-29
 
 ### Added
@@ -49,6 +66,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); version
 - CI: frontmatter validation, size budgets, link checking, markdown lint
 - CD: automatic tagged release and `.zip` bundle on version bump
 
+[2.0.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v2.0.0
 [1.2.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v1.2.0
 [1.1.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v1.1.0
 [1.0.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v1.0.0

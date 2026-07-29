@@ -51,10 +51,13 @@ Load these on demand — do not read them all upfront.
 | [`references/01-philosophy.md`](references/01-philosophy.md) | Starting any design task; justifying a decision; explaining why something is slop |
 | [`references/02-visual-patterns.md`](references/02-visual-patterns.md) | Backgrounds, surfaces, shadows, borders, badges, decorative elements |
 | [`references/03-color-patterns.md`](references/03-color-patterns.md) | Choosing a palette, defining tokens, building ramps, dark mode, contrast |
-| [`references/04-typography-patterns.md`](references/04-typography-patterns.md) | Choosing typefaces, setting a type scale, writing any user-facing copy |
+| [`references/04-typography-patterns.md`](references/04-typography-patterns.md) | Choosing typefaces, type scales, measure, line height, tracking |
 | [`references/05-layout-patterns.md`](references/05-layout-patterns.md) | Page structure, hero design, grids, information architecture |
 | [`references/06-component-patterns.md`](references/06-component-patterns.md) | Cards, pricing, forms, social proof, loading, empty and error states |
 | [`references/07-animation-patterns.md`](references/07-animation-patterns.md) | Any transition, entrance, hover, scroll behavior, or page transition |
+| [`references/08-copywriting-patterns.md`](references/08-copywriting-patterns.md) | Any user-facing words: headlines, body, CTAs, testimonials, errors, release notes |
+
+**On the examples.** This skill was written while building **AppMD**, a mobile app analysis tool, so APK/permission/security examples appear throughout. They are illustrations of the *principle*, never requirements. Substitute the user's actual product and domain — an example that mentions APKs applies identically to invoices, patient records, or freight manifests.
 
 Each taxonomy module ends with a **Quick audit** block — a list of strings to grep your own output for. Run it before emitting.
 

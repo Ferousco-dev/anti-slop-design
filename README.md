@@ -102,7 +102,8 @@ anti-slop-design/
 │           ├── 04-typography-patterns.md
 │           ├── 05-layout-patterns.md
 │           ├── 06-component-patterns.md
-│           └── 07-animation-patterns.md
+│           ├── 07-animation-patterns.md
+│           └── 08-copywriting-patterns.md
 ├── scripts/validate_skill.py     # CI validator
 ├── .github/workflows/            # validate + release automation
 └── install.sh
@@ -117,15 +118,24 @@ The skill uses **progressive disclosure**: `SKILL.md` stays small so it costs al
 | 01 | Core Philosophy | Why slop happens, the three laws, cost analysis, self-interrogation | ✅ Stable |
 | 02 | Visual Patterns | 20 banned treatments: gradients, glassmorphism, blobs, glows, radius, shadows, badges | ✅ Stable |
 | 03 | Color Patterns | The purple monoculture, OKLCH ramps, 60-30-10, neutrals, dark mode, contrast | ✅ Stable |
-| 04 | Typography, Voice & Copy | Inter, pairings, alignment, the buzzword database, headlines, cadence uniformity | ✅ Stable |
+| 04 | Typography | Inter, pairings, type scales, measure, line height, tracking, accessibility floors | ✅ Stable |
 | 05 | Layout Patterns | The SaaS conveyor belt, hero alternatives, bento, spacing rhythm, scroll hijacking | ✅ Stable |
 | 06 | Component & Element Patterns | The SaaS triad, pricing dark patterns, carousels, loading, empty and error states | ✅ Stable |
-| 07 | Animation & Motion Patterns | Fade-in-everything, `transition: all`, timing thresholds, parallax, scroll hijacking, reduced motion | ✅ Stable |
-| 08 | Code-Level & Technical Patterns | — | 🚧 Planned |
-| 09 | Image & Media Patterns | — | 🚧 Planned |
-| 10 | The Craft List | — | 🚧 Planned |
-| 11 | Section-by-Section Rules | — | 🚧 Planned |
-| 12 | Pre-Emit Self-Critique Checklist | — | 🚧 Planned |
+| 07 | Animation & Motion Patterns | Fade-in-everything, `transition: all`, timing thresholds, parallax, reduced motion | ✅ Stable |
+| 08 | Copywriting & Content | Buzzwords, headlines, voice, cadence uniformity, testimonials, case studies, corporate speak | ✅ Stable |
+| 09 | Code-Level & Technical Patterns | — | 🚧 Planned |
+| 10 | Image & Media Patterns | — | 🚧 Planned |
+| 11 | The Craft List | — | 🚧 Planned |
+| 12 | Section-by-Section Rules | — | 🚧 Planned |
+| 13 | Pre-Emit Self-Critique Checklist | — | 🚧 Planned |
+
+## A note on the examples
+
+This skill was written while building [AppMD](https://github.com/Ferousco-dev), a mobile app analysis tool. That's why APK, permission, and mobile-security examples turn up throughout the reference modules.
+
+**They are illustrations, not requirements.** Every rule is domain-independent — an example about permissions in an APK applies identically to line items on an invoice or fields in a patient record. If you're using this skill, Claude will substitute your product and domain automatically. If you're reading the modules directly, read past the APKs to the principle underneath.
+
+Contributions are welcome in any domain. New examples from other product categories make the skill better, not noisier.
 
 ## Contributing
 
