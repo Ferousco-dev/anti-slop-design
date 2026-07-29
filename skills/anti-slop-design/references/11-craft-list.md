@@ -7,6 +7,8 @@ Modules 02–10 are prohibitions. This one is the positive specification: the th
 
 Avoiding slop gets you to *inoffensive*. These get you to *good*. The distinction matters, because a page can pass every ban in this skill and still feel like nothing.
 
+> **This module is not optional polish.** Modules 02–10 are subtractive: run them alone and you get austerity, which is its own failure ([`01` §9](01-philosophy.md#9-anti-anti-slop--the-failure-mode-on-the-other-side)). A design needs a positive idea, and prohibitions cannot supply one. If you have cleared every ban and the result feels flat, you are not finished — you are half finished.
+
 ---
 
 ## 1. All eight states, every time

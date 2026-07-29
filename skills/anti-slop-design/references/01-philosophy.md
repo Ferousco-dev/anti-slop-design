@@ -177,6 +177,7 @@ Run these questions against your own output before emitting. Answer honestly; a 
 
 Avoiding slop is not the same as being weird. Over-correction is its own failure:
 
+- **Austerity.** The most common over-correction, and the hardest to see. You remove every banned pattern and ship something with no ideas in it — black text, white background, one accent, nothing wrong and nothing there. Prohibitions cannot produce a design; they can only stop a bad one. Removing slop gets you to *inoffensive*. [`11-craft-list.md`](11-craft-list.md) is not optional cleanup afterwards; it is the half that actually makes something.
 - **Novelty for novelty's sake.** Unreadable type, hostile navigation, mystery-meat icons. Distinctive but unusable is worse than generic and usable.
 - **Trend-chasing in the opposite direction.** Brutalism applied to a medical dashboard is as thoughtless as glassmorphism applied to it.
 - **Craft theater.** Elaborate cursor effects and scroll-jacking on a product that needed a clear pricing table.

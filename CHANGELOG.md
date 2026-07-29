@@ -3,6 +3,17 @@
 All notable changes to this skill are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning follows [SemVer](https://semver.org/).
 
+## [3.1.0] — 2026-07-29
+
+Findings from the first real build using the skill.
+
+### Changed
+
+- **Named the austerity failure mode.** Modules 02–10 are subtractive. Run them alone and you produce something with nothing wrong and nothing in it. Added to `01-philosophy.md` §9 as the most common over-correction, and the hardest to see, because every other gate passes.
+- `11-craft-list.md` now states up front that it is not optional polish. Prohibitions cannot supply a positive idea.
+- `13-pre-emit-checklist.md` Gate 6 gains a question that bites: **"Is there a visual idea here, or only an absence of bad ones?"** The idea must be nameable as something visible rather than something avoided. The previous Gate 5 item ("name one detail a careful person would notice") was too soft to catch a flat page.
+- `14-workflow.md` phase 3 now requires a craft pass before the build is considered done, rather than leaving module 11 to be picked up optionally.
+
 ## [3.0.0] — 2026-07-29
 
 The skill is now complete. All planned modules are stable.
@@ -84,6 +95,7 @@ The skill is now complete. All planned modules are stable.
 - CI: frontmatter validation, size budgets, link checking, markdown lint
 - CD: automatic tagged release and `.zip` bundle on version bump
 
+[3.1.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v3.1.0
 [3.0.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v3.0.0
 [2.0.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v2.0.0
 [1.2.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v1.2.0

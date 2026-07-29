@@ -77,6 +77,8 @@ While building, every element passes the Hierarchy of Needs ([`01`](01-philosoph
 
 Design all eight states as you build each component, not afterwards. Retrofitting states is how they get skipped.
 
+**Then run [`11-craft-list.md`](11-craft-list.md) before you consider the build done.** Phases 0–3 are mostly about not doing the wrong thing; module 11 is what puts something there. Skipping it is the single most likely way to produce a page that passes every check and still reads as nothing.
+
 ---
 
 ## Phase 4 — Self-critique

@@ -112,9 +112,9 @@ Non-negotiable. Failures here are defects, not preferences.
 
 ---
 
-## Gate 6 — The final four
+## Gate 6 — The final five
 
-Answer honestly. These override everything above.
+Answer honestly. These override everything above. Question 4 is the one that catches austerity, which every earlier gate will happily pass.
 
 **1. Would Stripe, Linear, or Vercel ship this?**
 Not "is it as good as" — would they *ship* it? If not, name the specific thing they would cut.
@@ -125,7 +125,10 @@ Decoration added to fill space is slop by definition. Delete it and check whethe
 **3. Could I defend every choice to a designer who disagreed?**
 Pick the three most arguable decisions. If you cannot argue them, they were not decisions.
 
-**4. Will this look dated in two years?**
+**4. Is there a visual idea here, or only an absence of bad ones?**
+Name the idea in one sentence, and make it something you could *see* rather than something you avoided. "No gradients, neutral palette, clean type" is not an idea — that is a list of removals. "The interface is built out of the product's own furniture" is an idea. If the honest answer is that the page is simply inoffensive, go to [`11-craft-list.md`](11-craft-list.md); you are half finished.
+
+**5. Will this look dated in two years?**
 Separate what is durable — hierarchy, type, spacing, restraint — from what is trend. If the trend elements were removed, is anything left?
 
 ---
@@ -150,6 +153,6 @@ When there is genuinely no time for the full pass:
 2. **Tab through it once** with no mouse
 3. **Read the copy aloud** and listen for the metronome
 4. **Strip the logo** and ask whether it could be anyone
-5. **Name your visual thesis** in one sentence
+5. **Name the visual idea** in one sentence, as something visible rather than something avoided
 
 Five checks. If any fails, the full list is not optional after all.
