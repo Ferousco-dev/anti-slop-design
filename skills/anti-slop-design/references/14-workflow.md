@@ -37,6 +37,8 @@ This is the single most important step. A named direction is what stops sampling
 
 **A good thesis** names the typographic character, the color strategy, the density, and what carries the personality. **A bad thesis** is "clean and modern" — that constrains nothing.
 
+**Set the six axes first** — density, warmth, formality, energy, ornament, contrast — from [`15-product-types.md`](15-product-types.md). Those positions *are* the thesis, and they translate directly into tokens in phase 2. It also carries the starting position for each product category, which is what stops a design being technically clean and still in the wrong register.
+
 Sanity checks:
 
 - Could this thesis describe a competitor? Sharpen it.
@@ -114,6 +116,7 @@ Load on demand. Do not read everything upfront — that is what progressive disc
 | Markup, tokens, performance, accessibility wiring | [`09`](09-code-patterns.md) |
 | Photography, illustration, icons, screenshots, video | [`10`](10-image-media-patterns.md) |
 | Knowing what to *add* once the slop is gone | [`11`](11-craft-list.md) |
+| Choosing the direction, or a design that is clean and still feels wrong | [`15`](15-product-types.md) |
 | Concrete rules for a specific page region | [`12`](12-section-rules.md) |
 | About to emit anything | [`13`](13-pre-emit-checklist.md) |
 

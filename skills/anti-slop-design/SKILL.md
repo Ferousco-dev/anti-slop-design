@@ -19,7 +19,7 @@ Every decision must answer: **"Why this, for this product, for this user, at thi
 Run this loop on every UI task. Do not skip steps — skipping is how slop returns.
 
 1. **Establish the brief before the pixels.** Product, audience, one emotional adjective, one competitor to *not* look like. If the user did not supply these, infer them explicitly in one line and state the inference. Never start from a blank aesthetic.
-2. **Commit to a direction.** Pick one visual thesis and name it (e.g. "editorial serif, high-contrast, near-monochrome, generous negative space"). A named direction is what prevents regression to the mean.
+2. **Commit to a direction.** Pick one visual thesis and name it (e.g. "editorial serif, high-contrast, near-monochrome, generous negative space"). A named direction is what prevents regression to the mean. Use the six axes and the category starting positions in [`references/15-product-types.md`](references/15-product-types.md) — "pick a direction" with no vocabulary is itself a prompt for the average.
 3. **Derive the system, not the screen.** Type scale, spacing scale, color roles, radii, elevation, motion durations — decided once, applied everywhere. Ad-hoc per-component values are a slop tell.
 4. **Build.** Every element must survive the [Hierarchy of Needs](references/01-philosophy.md#the-anti-slop-hierarchy-of-needs).
 5. **Self-critique before emitting.** Run [`references/13-pre-emit-checklist.md`](references/13-pre-emit-checklist.md). Fix what you find. Do not ship and apologize.
@@ -62,6 +62,7 @@ Load these on demand — do not read them all upfront.
 | [`references/12-section-rules.md`](references/12-section-rules.md) | Concrete rules for a specific page region — nav, hero, pricing, footer, forms |
 | [`references/13-pre-emit-checklist.md`](references/13-pre-emit-checklist.md) | **Always, before emitting.** The gate. |
 | [`references/14-workflow.md`](references/14-workflow.md) | Full protocol, module routing, and the review / existing-product / constrained-scope modes |
+| [`references/15-product-types.md`](references/15-product-types.md) | Choosing the direction: personality axes and what register each product category needs |
 
 To pin your own product's brief, palette, and voice so they stop being re-decided every session, copy [`assets/project-context.template.md`](assets/project-context.template.md) to `references/00-project-context.md`, fill it in, and add it to this table as "read first, always."
 
@@ -70,8 +71,6 @@ To pin your own product's brief, palette, and voice so they stop being re-decide
 Each taxonomy module ends with a **Quick audit** block — a list of strings to grep your own output for. Run it before emitting.
 
 Severity: **CRITICAL** = automatic fail, regenerate · **HIGH** = regenerate unless defensible in one specific sentence · **MEDIUM** = justify or replace · **LOW** = question the default.
-
-> Further modules (craft list, section-by-section rules, pre-emit checklist) are being added incrementally. See the repo CHANGELOG.
 
 ## Non-negotiables
 

@@ -124,7 +124,8 @@ anti-slop-design/
 │       │   ├── 01-philosophy.md
 │       │   ├── 02-visual-patterns.md … 12-section-rules.md
 │       │   ├── 13-pre-emit-checklist.md
-│       │   └── 14-workflow.md
+│       │   ├── 14-workflow.md
+│       │   └── 15-product-types.md
 │       └── assets/
 │           └── project-context.template.md
 ├── scripts/validate_skill.py     # CI validator
@@ -152,6 +153,7 @@ The skill uses **progressive disclosure**: `SKILL.md` stays small so it costs al
 | 12 | Section-by-Section Rules | Nav, hero, proof, features, pricing, FAQ, CTA, footer, forms, dashboards, 404 | ✅ Stable |
 | 13 | Pre-Emit Self-Critique Checklist | Six gates from instant-fails to the final four questions | ✅ Stable |
 | 14 | Workflow & Execution Protocol | Full protocol, module routing, review / existing-product / constrained-scope modes | ✅ Stable |
+| 15 | Product Types & Design Personality | Six personality axes, register mismatch, starting positions for 14 product categories | ✅ Stable |
 
 Plus [`assets/project-context.template.md`](skills/anti-slop-design/assets/project-context.template.md) — copy it to `references/00-project-context.md` to pin your own product's brief, palette, and voice so they stop being re-decided every session.
 

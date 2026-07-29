@@ -112,7 +112,7 @@ Non-negotiable. Failures here are defects, not preferences.
 
 ---
 
-## Gate 6 — The final five
+## Gate 6 — The final six
 
 Answer honestly. These override everything above. Question 4 is the one that catches austerity, which every earlier gate will happily pass.
 
@@ -128,7 +128,10 @@ Pick the three most arguable decisions. If you cannot argue them, they were not 
 **4. Is there a visual idea here, or only an absence of bad ones?**
 Name the idea in one sentence, and make it something you could *see* rather than something you avoided. "No gradients, neutral palette, clean type" is not an idea — that is a list of removals. "The interface is built out of the product's own furniture" is an idea. If the honest answer is that the page is simply inoffensive, go to [`11-craft-list.md`](11-craft-list.md); you are half finished.
 
-**5. Will this look dated in two years?**
+**5. Is this in the right register for the category?**
+Describe the design aloud without naming the product — "quiet, precise, monochrome, generous space" — and ask what it sells. If the honest answer is a different category, the register is wrong, and no amount of craft rescues it. See [`15-product-types.md`](15-product-types.md).
+
+**6. Will this look dated in two years?**
 Separate what is durable — hierarchy, type, spacing, restraint — from what is trend. If the trend elements were removed, is anything left?
 
 ---

@@ -3,13 +3,30 @@
 All notable changes to this skill are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning follows [SemVer](https://semver.org/).
 
+## [3.5.0] — 2026-07-29
+
+### Added
+
+- `references/15-product-types.md` — **choosing the direction.** Module 14 said "commit to a direction" without saying which directions exist, and "pick a direction" with no vocabulary is itself a prompt for the average. This module supplies:
+  - **Register mismatch** as a named failure: a design can pass every ban, hold together as a system, meet every contrast floor and still be wrong, because the tone does not match the product. Brutalism on a pension dashboard, enterprise density on a children's app, a Swiss legal textbook for a YouTube agency.
+  - **Six personality axes** — density, warmth, formality, energy, ornament, contrast — with what each one decides in the token system. Axes are decidable; adjectives like "modern" and "clean" are not, which is why briefs written in adjectives fail.
+  - **Starting positions for 14 product categories** — developer tools, B2B SaaS, fintech, healthcare, e-commerce, marketplaces, agencies, personal brands, editorial, dashboards, education, non-profit, local services, luxury, games. Each with what the visitor is actually deciding, what "premium" means there, and the category-specific way it goes wrong.
+  - **How to resolve mixed categories** — by the audience's dominant anxiety rather than the industry label. A fintech tool sold to developers is a developer tool.
+  - **When the category is the wrong answer**, and the requirement to name a departure rather than drift into one.
+- Gate 6 of the pre-emit checklist gains the register test: describe the design aloud without naming the product and ask what it sells. A different category means no amount of craft rescues it.
+
+### Changed
+
+- `SKILL.md` step 2 and `14-workflow.md` phase 1 now route to module 15, since that is the step where a model with no vocabulary falls back to the mean.
+- Removed the stale "further modules are being added" note; they all exist.
+
 ## [3.4.0] — 2026-07-29
 
 ### Added
 
 - **Distribution as a Claude Code plugin, so installed users actually receive updates.** `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` turn this repo into a one-plugin marketplace:
 
-  ```
+  ```text
   /plugin marketplace add Ferousco-dev/anti-slop-design
   /plugin install anti-slop-design@anti-slop-design
   ```
@@ -122,6 +139,7 @@ The skill is now complete. All planned modules are stable.
 - CI: frontmatter validation, size budgets, link checking, markdown lint
 - CD: automatic tagged release and `.zip` bundle on version bump
 
+[3.5.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v3.5.0
 [3.4.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v3.4.0
 [3.3.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v3.3.0
 [3.2.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v3.2.0

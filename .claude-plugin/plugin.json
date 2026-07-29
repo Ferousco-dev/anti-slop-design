@@ -1,7 +1,7 @@
 {
   "name": "anti-slop-design",
-  "description": "Eliminates generic AI-generated design from any UI you build or review. 14 reference modules covering the slop taxonomy, the craft list, section rules and a pre-emit checklist.",
-  "version": "3.4.0",
+  "description": "Eliminates generic AI-generated design from any UI you build or review. 15 reference modules: the slop taxonomy, personality axes and product-type registers, the craft list, section rules and a pre-emit checklist.",
+  "version": "3.5.0",
   "author": {
     "name": "Feranmi"
   },
