@@ -38,19 +38,44 @@ It does not make your AI weird. Over-correction — brutalism on a medical dashb
 
 ## Install
 
-### Claude Code (project-level)
+### As a plugin — recommended, because you get updates
+
+Installing as a plugin means new versions reach you when they ship. Copying files does not.
+
+```bash
+/plugin marketplace add Ferousco-dev/anti-slop-design
+/plugin install anti-slop-design@anti-slop-design
+```
+
+Then `/reload-plugins`. The skill triggers on its own; to force it, `/anti-slop-design:anti-slop-design`.
+
+**To update later:**
+
+```bash
+/plugin marketplace update anti-slop-design
+```
+
+Claude Code compares the `version` in the plugin manifest, so you only get an update when a real release lands rather than on every commit. CI fails the build if that version and the changelog disagree.
+
+---
+
+### Copying the files instead
+
+These give you the skill at a point in time. You will not get updates; re-run the command to refresh.
+
+#### Claude Code (project-level)
 
 ```bash
 git clone https://github.com/Ferousco-dev/anti-slop-design.git /tmp/anti-slop-design && cp -r /tmp/anti-slop-design/skills/anti-slop-design .claude/skills/
 ```
 
-### Claude Code (all your projects)
+#### Claude Code (all your projects)
 
 ```bash
 git clone https://github.com/Ferousco-dev/anti-slop-design.git /tmp/anti-slop-design && mkdir -p ~/.claude/skills && cp -r /tmp/anti-slop-design/skills/anti-slop-design ~/.claude/skills/
 ```
 
-### One-liner installer
+#### One-liner installer
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Ferousco-dev/anti-slop-design/main/install.sh | bash
@@ -58,7 +83,7 @@ curl -fsSL https://raw.githubusercontent.com/Ferousco-dev/anti-slop-design/main/
 
 Pass `--project` to install into `./.claude/skills` instead of your home directory.
 
-### Claude.ai / Claude Desktop
+#### Claude.ai / Claude Desktop
 
 Download the `.zip` from the [latest release](https://github.com/Ferousco-dev/anti-slop-design/releases/latest) and upload it under **Settings → Capabilities → Skills**.
 

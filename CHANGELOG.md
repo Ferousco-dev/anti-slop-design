@@ -3,6 +3,20 @@
 All notable changes to this skill are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning follows [SemVer](https://semver.org/).
 
+## [3.4.0] — 2026-07-29
+
+### Added
+
+- **Distribution as a Claude Code plugin, so installed users actually receive updates.** `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` turn this repo into a one-plugin marketplace:
+
+  ```
+  /plugin marketplace add Ferousco-dev/anti-slop-design
+  /plugin install anti-slop-design@anti-slop-design
+  ```
+
+  and later `/plugin marketplace update anti-slop-design`. Copying files into `.claude/skills/` still works and is documented, but it is a point-in-time snapshot with no update path.
+- `scripts/validate_skill.py` now fails if `plugin.json`'s `version` disagrees with the top CHANGELOG entry. Claude Code only ships an update when that field changes, so a stale version is a silent no-op release — exactly the kind of failure nobody notices.
+
 ## [3.3.0] — 2026-07-29
 
 ### Added
@@ -108,6 +122,7 @@ The skill is now complete. All planned modules are stable.
 - CI: frontmatter validation, size budgets, link checking, markdown lint
 - CD: automatic tagged release and `.zip` bundle on version bump
 
+[3.4.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v3.4.0
 [3.3.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v3.3.0
 [3.2.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v3.2.0
 [3.1.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v3.1.0

@@ -107,6 +107,29 @@ def validate(skill_dir: Path) -> None:
     print(f"  checked {rel}  ({words} words in body)")
 
 
+def check_plugin_version() -> None:
+    """plugin.json version must match the top CHANGELOG entry.
+
+    Claude Code only ships an update to installed users when this field
+    changes. A stale version means a silent no-op release."""
+    manifest = ROOT / ".claude-plugin" / "plugin.json"
+    changelog = ROOT / "CHANGELOG.md"
+    if not manifest.exists() or not changelog.exists():
+        return
+    import json as _json
+
+    version = _json.loads(manifest.read_text()).get("version")
+    m = re.search(r"^## \[(\d+\.\d+\.\d+)\]", changelog.read_text(), re.M)
+    latest = m.group(1) if m else None
+    if version != latest:
+        errors.append(
+            f".claude-plugin/plugin.json version '{version}' != CHANGELOG '{latest}'. "
+            "Installed users only get updates when this field is bumped."
+        )
+    else:
+        print(f"  plugin version {version} matches CHANGELOG")
+
+
 def main() -> int:
     if not SKILLS_DIR.is_dir():
         print("no skills/ directory found", file=sys.stderr)
@@ -120,6 +143,8 @@ def main() -> int:
     print(f"validating {len(found)} skill(s)")
     for skill in found:
         validate(skill)
+
+    check_plugin_version()
 
     for w in warnings:
         print(f"warning: {w}")

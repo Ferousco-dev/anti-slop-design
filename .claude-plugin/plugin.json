@@ -1,0 +1,11 @@
+{
+  "name": "anti-slop-design",
+  "description": "Eliminates generic AI-generated design from any UI you build or review. 14 reference modules covering the slop taxonomy, the craft list, section rules and a pre-emit checklist.",
+  "version": "3.4.0",
+  "author": {
+    "name": "Feranmi"
+  },
+  "homepage": "https://github.com/Ferousco-dev/anti-slop-design",
+  "repository": "https://github.com/Ferousco-dev/anti-slop-design",
+  "license": "MIT"
+}

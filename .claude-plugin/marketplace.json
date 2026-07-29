@@ -1,0 +1,11 @@
+{
+  "name": "anti-slop-design",
+  "owner": { "name": "Feranmi", "url": "https://github.com/Ferousco-dev" },
+  "plugins": [
+    {
+      "name": "anti-slop-design",
+      "source": "./",
+      "description": "Stop your AI shipping the same purple-gradient, Inter-font, three-feature-card website as everyone else."
+    }
+  ]
+}
