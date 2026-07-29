@@ -2,6 +2,8 @@
 
 # Anti-Slop Design
 
+<img src=".github/social-preview.png" alt="Left: a pile of overlapping purple cards. Right: an ordered grid with one accent colour." width="760">
+
 **A Claude Agent Skill that stops your AI from shipping the same purple-gradient website as everyone else.**
 
 [![Validate](https://github.com/Ferousco-dev/anti-slop-design/actions/workflows/validate.yml/badge.svg)](https://github.com/Ferousco-dev/anti-slop-design/actions/workflows/validate.yml)
