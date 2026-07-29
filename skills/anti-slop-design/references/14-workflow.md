@@ -117,6 +117,7 @@ Load on demand. Do not read everything upfront — that is what progressive disc
 | Photography, illustration, icons, screenshots, video | [`10`](10-image-media-patterns.md) |
 | Knowing what to *add* once the slop is gone | [`11`](11-craft-list.md) |
 | Choosing the direction, or a design that is clean and still feels wrong | [`15`](15-product-types.md) |
+| Any mobile app, native or cross-platform | [`16`](16-mobile-app-patterns.md) |
 | Concrete rules for a specific page region | [`12`](12-section-rules.md) |
 | About to emit anything | [`13`](13-pre-emit-checklist.md) |
 

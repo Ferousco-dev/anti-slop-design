@@ -30,6 +30,15 @@ Any single hit: **stop and regenerate that section.** No justification is accept
 - [ ] An AI-generated human presented as a real person
 - [ ] An em-dash in a headline, tagline, or CTA
 
+**Mobile apps only, additionally:**
+
+- [ ] `:hover` carrying meaning anywhere
+- [ ] One identical design shipped to iOS and Android
+- [ ] Content under the notch, status bar, or home indicator
+- [ ] A tap target under 44pt
+- [ ] A permission prompt before the user has seen any value
+- [ ] Type that ignores the OS text-size setting
+
 **Count of hits: ___. Anything above zero means the work is not ready.**
 
 ---

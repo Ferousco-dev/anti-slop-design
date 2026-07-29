@@ -2,6 +2,7 @@
 
 > **Module:** 15 of N · **Status:** stable
 > **Read when:** choosing a direction, at [`14-workflow.md`](14-workflow.md) phase 1, before any pixel. Also when a design is technically clean and still feels wrong.
+> **Mobile apps:** the axes apply, but platform conventions come first — see [`16-mobile-app-patterns.md`](16-mobile-app-patterns.md).
 
 Module 14 says *commit to a direction*. This is the module that tells you which directions exist and which ones fit what you are building.
 
@@ -177,9 +178,57 @@ Each entry gives: what the visitor is actually deciding, the starting position o
 **Premium means:** the work itself — footage, art, motion. This is the one category where maximalism is the correct answer and restraint is the mistake.
 **Goes wrong by:** applying SaaS conventions to entertainment. A neutral, tasteful, well-spaced games site has failed.
 
+### More categories, in brief
+
+The six axes are the vocabulary; these are starting positions. Same format, compressed.
+
+| Category | Start | Premium means | Goes wrong by |
+|---|---|---|---|
+| **Edtech (K-12 / schools)** | medium · warm · medium formality · medium energy · medium ornament | Working for a distracted 11-year-old *and* the teacher buying it | Designing for the child and forgetting the procurement committee, or the reverse |
+| **Healthtech (consumer)** | sparse · warm · medium · still · low · medium | Plain language, one decision per screen, no urgency | Growth-marketing mechanics next to medical information |
+| **Insurtech** | medium · cool-warm · high · still · low · medium | Making the exclusions as findable as the price | Hiding what is not covered, which is the only thing anyone needs |
+| **Proptech / real estate** | dense · warm · medium · medium · medium · high | Photography, floor plans, and honest totals including fees | Listing hype language over a search that does not filter properly |
+| **Legaltech** | dense · cool · high · still · none · medium | Precision, citations, and audit trails | Sounding casual about something with liability attached |
+| **Logistics / supply chain** | very dense · cool · low · still · none · medium | Status legible at a glance, exceptions surfaced first | Prettifying a dashboard whose users need more rows, not fewer |
+| **HR tech** | medium · warm · medium · still · low · medium | Feeling safe to the employee, not just useful to HR | Designing only for the admin who bought it |
+| **Analytics / BI** | very dense · cool · low · still · none · medium | Charts that answer a question, not decorate one. See [`dataviz`] rules | Vanity dashboards; colour by series with no meaning |
+| **CRM / sales tools** | dense · cool-warm · low · still · low · medium | Speed of entry, and never losing a note | Forms so long the rep works around the tool |
+| **AI / ML products** | medium · cool · medium · low · low · medium | Honesty about confidence, and a visible way to correct the model | Magic framing. Anthropomorphising, hiding uncertainty, no undo |
+| **Crypto / web3** | medium · cool · medium · medium · medium · high | Irreversibility made obvious before the action | Hype, tickers, countdowns — the category's default and the reason it is distrusted |
+| **Travel / booking** | dense · warm · medium · medium · medium · high | Real photography, real availability, total price with fees shown | Fake scarcity and drip pricing, both increasingly regulated |
+| **Food delivery** | dense · warm · low · kinetic · medium · high | Photography, accurate timing, and a live order state that is true | Over-gamified upsell between the user and their dinner |
+| **Fitness / wellness** | sparse-medium · warm · low · kinetic · medium · high | Progress that is legible and honest | Shame mechanics, and body-image imagery presented as aspiration |
+| **Dating** | sparse · warm · low · medium · medium · high | Safety features that are easy to find, and honest matching | Dark patterns around visibility and paid boosts |
+| **Social / community** | dense · warm · low · kinetic · medium · high | Moderation and control over your own feed | Engagement mechanics that the user did not ask for |
+| **Music / audio** | sparse · warm · medium · kinetic · high · high | Artwork large, playback controls always reachable | Burying the player; treating audio like a list of files |
+| **Developer platform / PaaS** | dense · cool · low · still · none · high | Time-to-first-deploy, and docs that are the product | Marketing at engineers. See the developer-tools entry above |
+| **No-code / builders** | dense · warm · low · medium · low · medium | Making the escape hatch visible, so power users are not trapped | Hiding complexity until it surfaces as a wall |
+| **Government / civic** | sparse · neutral · high · still · none · high | Plain language and statutory accessibility, not aspiration | Corporate polish; forms that assume a desktop and a printer |
+
 ---
 
-## 4. Choosing when the category is mixed
+## 4. When the category is not listed: research it
+
+The list above is a starting set, not a closed one. When the product does not fit — a niche vertical, a category that did not exist last year, a genuinely new form — **do not guess and do not fall back to B2B SaaS**, which is the default that produces the conveyor belt.
+
+Research it instead. Three searches, in this order:
+
+1. **`"<category>" design conventions`** or **`"<category>" UX patterns`** — find what the category has settled on and why.
+2. **`best "<category>" websites 2026`** or **`"<category>" design inspiration`** — look at eight to ten real examples and note where they *agree*. Agreement across competitors is the convention; disagreement is where brand lives.
+3. **`"<category>" trust signals`** or **`what customers look for "<category>"`** — this is the one that decides the register, because it tells you the dominant anxiety.
+
+Then write the six axes and the starting position yourself, and **state that you derived it**: *"This category is not in the reference. I looked at N real examples; they agree on ___ and diverge on ___, so I am starting at ___."*
+
+Two rules for this:
+
+- **Look at real examples, not listicles about them.** A "top 10 fintech sites" article tells you what an SEO writer thinks. The sites tell you what the category actually does.
+- **Note the regulatory surface.** Health, finance, children, government, and anything touching consent carry legal requirements that outrank taste. Search **`"<category>" accessibility requirements`** or **`"<category>" advertising rules`** before designing the thing that will need to comply.
+
+If you cannot research — no tools, offline — say so, pick the nearest listed category, and name the substitution rather than pretending it fits.
+
+---
+
+## 5. Choosing when the category is mixed
 
 Most real products sit across two. A fintech tool sold to developers, a healthcare SaaS, an education marketplace.
 
@@ -195,7 +244,7 @@ A fintech tool for developers is a *developer tool* — because the buyer's domi
 
 ---
 
-## 5. Where the category is the *wrong* answer
+## 6. Where the category is the *wrong* answer
 
 The starting positions above are conventions, and module 01 is clear that convention adopted unexamined is exactly the failure this skill exists to prevent.
 
@@ -222,7 +271,7 @@ Before building, these six are answered in writing:
 
 Then:
 
-- [ ] Category named, and its starting position stated
+- [ ] Category named, and its starting position stated (researched and stated as derived, if not in the reference)
 - [ ] Any departure from it named, with the reason
 - [ ] The audience's **dominant anxiety** named in one word
 - [ ] Described aloud without naming the product, someone would guess the right category

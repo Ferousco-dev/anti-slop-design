@@ -3,6 +3,22 @@
 All notable changes to this skill are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning follows [SemVer](https://semver.org/).
 
+## [4.0.0] — 2026-07-29
+
+The skill now covers front-end design generally rather than websites specifically.
+
+### Added
+
+- `references/16-mobile-app-patterns.md` — **mobile apps.** Models have far more web training data than native, so generated mobile UI is a website wearing an app's clothes. That is the module's through-line. Covers: shipping one identical design to both platforms (navigation is the largest divergence and the thing users have most deeply learned); `:hover` carrying meaning on a touch device while the pressed state is missing; safe areas, the notch and the home indicator; thumb reach on tall phones, where top-right is the worst spot on the device; navigation that fights the platform; permission prompts asked cold, which burns a one-shot resource; platform motion languages; lists that fall over at a thousand rows; Dynamic Type and OS accessibility settings; battery, data and heat; and app-store icon and screenshot surfaces.
+- **20 more product categories** in module 15 — edtech, healthtech, insurtech, proptech, legaltech, logistics, HR tech, analytics, CRM, AI/ML products, crypto, travel, food delivery, fitness, dating, social, music, developer platforms, no-code, government — each with a starting position, what premium means, and how it specifically goes wrong. 34 categories total.
+- **A research protocol** for categories not in the reference (module 15 §4). Three searches in order — conventions, real examples, trust signals — then derive the axes and *state that you derived them*. Two rules: look at real examples rather than listicles about them, and check the regulatory surface for health, finance, children, government and consent. Falling back to B2B SaaS is what produces the generic page, so guessing is explicitly banned.
+- Mobile-specific instant fails in Gate 1 of the pre-emit checklist.
+
+### Changed
+
+- The skill's `description` now says front-end, web *or* mobile, and lists iOS, Android, React Native and Flutter as triggers — so it activates on app work rather than only web.
+- Two mobile entries added to the instant-reject list in `SKILL.md`.
+
 ## [3.5.0] — 2026-07-29
 
 ### Added
@@ -139,6 +155,7 @@ The skill is now complete. All planned modules are stable.
 - CI: frontmatter validation, size budgets, link checking, markdown lint
 - CD: automatic tagged release and `.zip` bundle on version bump
 
+[4.0.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v4.0.0
 [3.5.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v3.5.0
 [3.4.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v3.4.0
 [3.3.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v3.3.0

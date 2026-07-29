@@ -1,6 +1,6 @@
 ---
 name: anti-slop-design
-description: Eliminates generic AI-generated design ("AI slop") from any UI you build or review. Use whenever generating, reviewing, refactoring, or critiquing a landing page, dashboard, marketing site, component, design system, or micro-interaction — and whenever the user says a design "looks AI-generated", "looks generic", "looks like a template", "needs personality", or asks to make an interface premium, handcrafted, or distinctive. Also use before emitting any frontend code that involves color, typography, layout, spacing, motion, or copy decisions.
+description: Eliminates generic AI-generated design ("AI slop") from any front-end you build or review — web or mobile. Use whenever generating, reviewing, refactoring, or critiquing a website, landing page, dashboard, web app, iOS or Android app, React Native or Flutter screen, component, design system, or micro-interaction — and whenever the user says a design "looks AI-generated", "looks generic", "looks like a template", "needs personality", or asks to make an interface premium, handcrafted, or distinctive. Also use before emitting any frontend code that involves color, typography, layout, spacing, motion, or copy decisions.
 license: MIT
 ---
 
@@ -38,6 +38,8 @@ Reach for any of these and you have failed by default. Each requires an explicit
 - Dark mode nobody asked for
 - Generic fade-in-on-scroll applied to everything
 - Emoji as iconography
+- One identical design shipped to both iOS and Android
+- `:hover` carrying meaning in a mobile app
 - Copy like "Elevate your workflow" / "Unlock the power of" / "Seamlessly"
 
 The full banned-pattern database lives in the reference files below.
@@ -62,9 +64,12 @@ Load these on demand — do not read them all upfront.
 | [`references/12-section-rules.md`](references/12-section-rules.md) | Concrete rules for a specific page region — nav, hero, pricing, footer, forms |
 | [`references/13-pre-emit-checklist.md`](references/13-pre-emit-checklist.md) | **Always, before emitting.** The gate. |
 | [`references/14-workflow.md`](references/14-workflow.md) | Full protocol, module routing, and the review / existing-product / constrained-scope modes |
-| [`references/15-product-types.md`](references/15-product-types.md) | Choosing the direction: personality axes and what register each product category needs |
+| [`references/15-product-types.md`](references/15-product-types.md) | Choosing the direction: personality axes and the register each product category needs |
+| [`references/16-mobile-app-patterns.md`](references/16-mobile-app-patterns.md) | Any native or cross-platform mobile app: iOS, Android, React Native, Flutter, SwiftUI, Compose |
 
 To pin your own product's brief, palette, and voice so they stop being re-decided every session, copy [`assets/project-context.template.md`](assets/project-context.template.md) to `references/00-project-context.md`, fill it in, and add it to this table as "read first, always."
+
+**When the product's category is not in module 15, research it rather than guessing.** Falling back to B2B SaaS is what produces the generic page. Module 15 §4 has the search protocol.
 
 **On the examples.** This skill was written while building **AppMD**, a mobile app analysis tool, so APK/permission/security examples appear throughout. They are illustrations of the *principle*, never requirements. Substitute the user's actual product and domain — an example that mentions APKs applies identically to invoices, patient records, or freight manifests.
 
