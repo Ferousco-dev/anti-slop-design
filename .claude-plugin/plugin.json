@@ -1,7 +1,7 @@
 {
   "name": "anti-slop-design",
-  "description": "Eliminates generic AI-generated design from any front-end you build or review, web or mobile. 16 reference modules: the slop taxonomy, personality axes and product-type registers, mobile platform patterns, the craft list, section rules and a pre-emit checklist.",
-  "version": "4.0.0",
+  "description": "Eliminates generic AI-generated design from any front-end you build or review, web or mobile. 20 reference modules: the slop taxonomy, personality axes and product registers, mobile and app-screen patterns, trust signals, data visualisation, a craft list, a pre-emit checklist and a worked example.",
+  "version": "4.1.0",
   "author": {
     "name": "Feranmi"
   },

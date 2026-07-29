@@ -40,6 +40,8 @@ Reach for any of these and you have failed by default. Each requires an explicit
 - Emoji as iconography
 - One identical design shipped to both iOS and Android
 - `:hover` carrying meaning in a mobile app
+- A bar chart whose y-axis does not start at zero
+- Chart values available only in a hover tooltip
 - Copy like "Elevate your workflow" / "Unlock the power of" / "Seamlessly"
 
 The full banned-pattern database lives in the reference files below.
@@ -66,6 +68,10 @@ Load these on demand — do not read them all upfront.
 | [`references/14-workflow.md`](references/14-workflow.md) | Full protocol, module routing, and the review / existing-product / constrained-scope modes |
 | [`references/15-product-types.md`](references/15-product-types.md) | Choosing the direction: personality axes and the register each product category needs |
 | [`references/16-mobile-app-patterns.md`](references/16-mobile-app-patterns.md) | Any native or cross-platform mobile app: iOS, Android, React Native, Flutter, SwiftUI, Compose |
+| [`references/17-app-screen-rules.md`](references/17-app-screen-rules.md) | A specific app screen — onboarding, feed, profile, settings, paywall, checkout |
+| [`references/18-trust-signals.md`](references/18-trust-signals.md) | Deciding what proof to show, or a page that is clean and still not converting |
+| [`references/19-data-visualisation.md`](references/19-data-visualisation.md) | Any chart, dashboard, metric tile or table |
+| [`references/20-worked-example.md`](references/20-worked-example.md) | Seeing the whole protocol run end to end on a real brief, wrong turns included |
 
 To pin your own product's brief, palette, and voice so they stop being re-decided every session, copy [`assets/project-context.template.md`](assets/project-context.template.md) to `references/00-project-context.md`, fill it in, and add it to this table as "read first, always."
 

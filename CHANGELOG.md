@@ -3,6 +3,21 @@
 All notable changes to this skill are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning follows [SemVer](https://semver.org/).
 
+## [4.1.0] — 2026-07-29
+
+### Added
+
+- `references/17-app-screen-rules.md` — the per-screen working reference for apps, the companion to module 16 in the same ban / do / done-when shape module 12 uses for web. Twelve screens: onboarding, feed, detail, search, profile, settings, notifications and permissions, paywall, checkout, forms, empty states, error and offline. The paywall entry is the sharpest — state the amount charged today, the renewal amount and the date, or it is a dark pattern both stores reject for.
+- `references/18-trust-signals.md` — **proof is not one thing.** Modules 06 and 12 treated social proof as a single category; different audiences accept different evidence, and evidence the audience does not accept is *worse* than none because it occupies the slot where their answer should have been. Contains a five-tier proof ladder ranked by how hard something is to fake, what nine specific audiences accept and reject, placement rules putting each proof next to the doubt it answers, and the honest options when you have no proof yet.
+- `references/19-data-visualisation.md` — charts are the highest-stakes surface in the skill, because a bad chart does not look bad, it looks authoritative and says something false. Truncated bar axes, dual axes, rainbow and red-green palettes, pie limits, unlabelled charts, misleading metric tiles, charts reachable only by mouse, chart junk and 3D, choosing the chart by the question, and dashboards with no hierarchy.
+- `references/20-worked-example.md` — **the protocol run end to end on a real brief, with the wrong turns left in.** The skill described a process it never demonstrated. This traces one live build through all six phases: the brief, the six axes, the system derived from them, the austerity failure and the client calling it ugly, the seven defects the gate caught, how the trust-signal analysis decided the hero, and the closing statement of decisions. Includes what was *not* done. Six findings from that build went back into this skill, which is the point.
+
+### Changed
+
+- Gate 1 of the pre-emit checklist gains chart-specific instant fails; Gate 3 gains two proof checks.
+- Module 12's social-proof and dashboard sections now route to modules 18 and 19 rather than treating each as one topic.
+- Two chart entries added to the instant-reject list in `SKILL.md`.
+
 ## [4.0.0] — 2026-07-29
 
 The skill now covers front-end design generally rather than websites specifically.
@@ -155,6 +170,7 @@ The skill is now complete. All planned modules are stable.
 - CI: frontmatter validation, size budgets, link checking, markdown lint
 - CD: automatic tagged release and `.zip` bundle on version bump
 
+[4.1.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v4.1.0
 [4.0.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v4.0.0
 [3.5.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v3.5.0
 [3.4.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v3.4.0

@@ -41,6 +41,8 @@ Place proof adjacent to the decision it supports: near the CTA, near pricing, ne
 
 **Done when** — every claim on screen could survive someone checking it.
 
+**Which proof, for which audience:** see [`18-trust-signals.md`](18-trust-signals.md). A developer wants a code sample, a patient wants a licence number, a shopper wants the returns policy — and proof the audience does not accept is worse than none, because it occupies the slot where their answer should have been.
+
 ---
 
 ## Features
@@ -126,6 +128,8 @@ Ask for the minimum. Every field costs completions.
 **Do** — establish hierarchy: the one number that matters largest, supporting metrics smaller. Label axes, state the time range, and show the denominator. Encode meaning with position and length before color, and never with color alone. Use tabular numerals so values do not jitter as they update. Design the first-run empty state as an onboarding surface. Let sections load independently rather than blocking on the slowest query.
 
 **Done when** — a user can answer "is this good or bad?" without asking anyone.
+
+Chart-level rules — axes, palettes, dual axes, accessibility — are in [`19-data-visualisation.md`](19-data-visualisation.md).
 
 ---
 

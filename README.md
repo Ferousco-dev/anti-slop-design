@@ -6,7 +6,7 @@
 
 **A Claude Agent Skill that stops your AI from shipping the same purple-gradient website as everyone else.**
 
-Web and mobile. 16 modules.
+Web and mobile. 20 modules.
 
 [![Validate](https://github.com/Ferousco-dev/anti-slop-design/actions/workflows/validate.yml/badge.svg)](https://github.com/Ferousco-dev/anti-slop-design/actions/workflows/validate.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](LICENSE)
@@ -130,7 +130,9 @@ anti-slop-design/
 │       │   ├── 13-pre-emit-checklist.md
 │       │   ├── 14-workflow.md
 │       │   ├── 15-product-types.md
-│       │   └── 16-mobile-app-patterns.md
+│       │   ├── 16-mobile-app-patterns.md
+│       │   ├── 17-app-screen-rules.md … 19-data-visualisation.md
+│       │   └── 20-worked-example.md
 │       └── assets/
 │           └── project-context.template.md
 ├── scripts/validate_skill.py     # CI validator
@@ -160,6 +162,10 @@ The skill uses **progressive disclosure**: `SKILL.md` stays small so it costs al
 | 14 | Workflow & Execution Protocol | Full protocol, module routing, review / existing-product / constrained-scope modes | ✅ Stable |
 | 15 | Product Types & Design Personality | Six personality axes, register mismatch, 34 product categories, research protocol | ✅ Stable |
 | 16 | Mobile App Patterns | Platform divergence, hover on touch, safe areas, reach, permissions, Dynamic Type | ✅ Stable |
+| 17 | App Screen Rules | Onboarding, feed, detail, search, profile, settings, paywall, checkout, errors | ✅ Stable |
+| 18 | Trust Signals by Category | The proof ladder, what nine audiences actually accept, placement | ✅ Stable |
+| 19 | Data Visualisation | Truncated axes, dual axes, rainbow palettes, chart accessibility, dashboards | ✅ Stable |
+| 20 | Worked Example | The full protocol on a real brief, with the wrong turns left in | ✅ Stable |
 
 Plus [`assets/project-context.template.md`](skills/anti-slop-design/assets/project-context.template.md) — copy it to `references/00-project-context.md` to pin your own product's brief, palette, and voice so they stop being re-decided every session.
 

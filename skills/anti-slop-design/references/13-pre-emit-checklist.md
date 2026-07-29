@@ -39,6 +39,14 @@ Any single hit: **stop and regenerate that section.** No justification is accept
 - [ ] A permission prompt before the user has seen any value
 - [ ] Type that ignores the OS text-size setting
 
+**Charts and dashboards only, additionally:**
+
+- [ ] A bar chart whose y-axis does not start at zero
+- [ ] Two series on two y-axes in one plot
+- [ ] A rainbow or red-green palette
+- [ ] Values available only on hover, with no table or text alternative
+- [ ] A metric with no comparison and no time window
+
 **Count of hits: ___. Anything above zero means the work is not ready.**
 
 ---
@@ -68,6 +76,8 @@ Every one must have an answer. "It looked good" is not one.
 - [ ] No hedging — "designed to", "may help", "allows you to"
 - [ ] Active voice in at least 80% of sentences
 - [ ] Every claim contains a number, a name, or something checkable
+- [ ] Every proof element reduces the audience's *actual* anxiety ([`18`](18-trust-signals.md))
+- [ ] At least one thing on the page is checkable by a sceptic in under a minute
 - [ ] **Sentence length varies visibly** — not all in the 18–24 word band
 - [ ] **Paragraph length varies visibly** — not all 3–5 sentences
 - [ ] Contractions appear where natural
