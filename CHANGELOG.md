@@ -3,6 +3,13 @@
 All notable changes to this skill are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning follows [SemVer](https://semver.org/).
 
+## [3.3.0] — 2026-07-29
+
+### Added
+
+- `10-image-media-patterns.md` §10.4b — **brand marks set as Unicode characters.** Found on a real build: an Arabic ن used as a corner watermark rendered as tofu on iOS, because the Helvetica/Arial system stack has no glyph for it at that weight. It looked perfect on the build machine. Marks ship as assets; non-Latin text needs a font that actually covers the script plus a `lang` declaration.
+- `12-section-rules.md` navigation — guidance that a sticky desktop header need not be sticky on mobile, where it costs ~10% of viewport permanently and sits across the footer at the bottom of the page.
+
 ## [3.2.0] — 2026-07-29
 
 ### Added
@@ -101,6 +108,7 @@ The skill is now complete. All planned modules are stable.
 - CI: frontmatter validation, size budgets, link checking, markdown lint
 - CD: automatic tagged release and `.zip` bundle on version bump
 
+[3.3.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v3.3.0
 [3.2.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v3.2.0
 [3.1.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v3.1.0
 [3.0.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v3.0.0

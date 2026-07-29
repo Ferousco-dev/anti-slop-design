@@ -122,6 +122,34 @@ Mixing icon sets is subtler but reads as carelessness: a 1.5px-stroke Lucide ico
 
 ---
 
+## 10.4b Brand marks set as Unicode characters
+
+**HIGH**
+
+**Banned specifics**
+
+- A logo, monogram or wordmark rendered as a text character rather than an asset
+- Non-Latin script (Arabic, Devanagari, CJK, Cyrillic) typed into a Latin-only font stack
+- Currency symbols, arrows, mathematical operators or dingbats assumed to exist in the loaded face
+- Assuming a glyph is safe because it renders on the machine you built it on
+
+**Why this is slop**
+
+A character is only as reliable as the font that has to draw it. Set `ن` in a `Helvetica Neue, Arial` stack and iOS has no Arabic glyph at that weight, so it renders as **tofu** — an empty box where the brand mark should be. On the developer's machine, with a fuller font library, it looks perfect.
+
+The failure is invisible in review and visible to exactly the audience the mark matters to. And it is worst where it hurts most: a mark set large as a background flourish becomes a large empty box.
+
+**Instead**
+
+- **Logos and marks ship as assets** — SVG for line art, PNG with alpha for raster. They are brand, not text.
+- If a non-Latin glyph genuinely belongs in running text, load a font that covers the script and declare `lang` so the right face and shaping are used
+- Use a subsetted webfont with an explicit `unicode-range` rather than trusting the system stack
+- Test on the actual platforms, not just the build machine — glyph coverage varies most between macOS, iOS, Windows and Android
+
+**The check:** view the page on a device that is not yours. A missing glyph is a box, a question mark, or a blank — never a fallback that "looks fine".
+
+---
+
 ## 10.5 Screenshots that undermine the product
 
 **HIGH**
@@ -278,6 +306,7 @@ alt="image"   alt="photo"   alt="screenshot"   alt=""   (on informative images)
 autoplay            (with no muted)
 <video              (with no <track kind="captions">)
 emoji in JSX/HTML   (used as an icon)
+non-Latin characters in markup   (brand marks set as text rather than shipped as assets)
 lucide + heroicons + react-icons   (more than one icon set imported)
 Lorem   "Test User"   "John Doe"   (visible inside a screenshot)
 ```

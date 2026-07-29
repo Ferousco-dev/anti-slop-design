@@ -13,6 +13,8 @@ Modules 02–10 say what to avoid. Module 11 says what to add. This one is the w
 
 **Do** — three to five destinations maximum. One primary action, visually distinct. The logo links home. Dropdowns open on click as well as hover, close on Escape, and are arrow-key navigable. Current location is indicated by something other than color alone. On mobile, a real menu with focus trapping — not a `<details>` element pretending to be one.
 
+**On sticky:** a header that is sticky on desktop does not have to be sticky on a phone. There it costs ~10% of the viewport permanently, and at the bottom of the page it sits across the footer — which reads as a broken overlay when the two have different backgrounds. If the footer carries the full navigation, a static header on mobile loses nothing and gives the content back its space.
+
 **Done when** — a first-time visitor can name what the product does from the nav alone, and every item is reachable by keyboard in visual order.
 
 ---
