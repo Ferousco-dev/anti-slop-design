@@ -3,6 +3,12 @@
 All notable changes to this skill are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning follows [SemVer](https://semver.org/).
 
+## [3.2.0] — 2026-07-29
+
+### Added
+
+- `09-code-patterns.md` §9.4b — **unlayered CSS silently beating your utilities.** Found on a real build: a hamburger stayed visible at every breakpoint because custom component CSS was appended outside any `@layer`, and unlayered CSS beats everything inside one regardless of specificity or source order. Tailwind's utilities live in `@layer utilities`, so a plain `.class { display: inline-flex }` overrode `md:hidden` and the media query never got a say. The failure presents as a breakpoint bug, so the debugging goes to the media query, the viewport and the build — never to layering. Includes the fix and the check: assert `display: none` at each breakpoint rather than reading the class list, because the class can be present and losing.
+
 ## [3.1.0] — 2026-07-29
 
 Findings from the first real build using the skill.
@@ -95,6 +101,7 @@ The skill is now complete. All planned modules are stable.
 - CI: frontmatter validation, size budgets, link checking, markdown lint
 - CD: automatic tagged release and `.zip` bundle on version bump
 
+[3.2.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v3.2.0
 [3.1.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v3.1.0
 [3.0.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v3.0.0
 [2.0.0]: https://github.com/Ferousco-dev/anti-slop-design/releases/tag/v2.0.0

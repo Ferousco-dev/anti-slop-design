@@ -148,6 +148,40 @@ A named, enumerated z-index scale. Spacing drawn from a defined scale (4px base 
 
 ---
 
+## 9.4b Unlayered CSS silently beating your utilities
+
+**HIGH**
+
+**Banned specifics**
+
+- Custom rules appended to a stylesheet outside any `@layer`, in a project whose framework uses layers
+- A component class setting `display`, `position` or `width` and quietly winning over `md:hidden`, `lg:flex`, `hidden`
+- Reaching for `!important` when a responsive utility "doesn't work"
+- Assuming a later rule loses because its selector is less specific
+
+**Why this is slop**
+
+Unlayered CSS beats **everything** inside `@layer`, regardless of specificity or source order. Tailwind v4 puts its utilities in `@layer utilities`, so a single plain `.my-button { display: inline-flex }` at the bottom of your stylesheet overrides `md:hidden` on every breakpoint — and the media query never gets a say.
+
+The failure is quiet and looks like a breakpoint bug, so people debug the media query, the viewport, and the build. The devtools even show the utility as applied-then-overridden without making the reason obvious.
+
+**Instead**
+
+```css
+/* Component styles belong below utilities, so utilities can still win. */
+@layer components {
+  .nd-burger { display: inline-flex; }
+}
+```
+
+- Put custom component CSS in `@layer components`; put resets in `@layer base`
+- Never leave rules unlayered in a layered project unless you specifically intend them to beat everything
+- If a responsive utility "isn't working", check layering **before** specificity — it is the more likely cause and the one nobody looks at
+
+**The check:** resize to each breakpoint and assert the thing that should disappear actually has `display: none`. Reading the class list is not enough; the class can be present and losing.
+
+---
+
 ## 9.5 Arbitrary values instead of tokens
 
 **HIGH**
@@ -355,6 +389,7 @@ Automated tooling catches roughly a third of real issues. It is the floor, not t
 outline: none       outline:none
 !important
 z-index: 9           z-index: 99         z-index: 999
+(custom CSS appended outside @layer in a layered project)
 tabindex="1"        tabindex="2"
 placeholder=        (with no matching <label for>)
 aria-hidden="true"  (on anything focusable)
